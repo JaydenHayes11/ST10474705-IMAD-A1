@@ -5,15 +5,101 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:background="#0B0B0B"
+    tools:context=".MainActivity" >
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:id="@+id/textView"
+        android:layout_width="289dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="61dp"
+        android:layout_marginTop="42dp"
+        android:layout_marginEnd="61dp"
+        android:layout_marginBottom="624dp"
+        android:text="Meal Suggestions"
+        android:textAlignment="center"
+        android:textColor="#DBBE11"
+        android:textSize="34sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/TimeOfDayText"
+        android:layout_width="224dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="93dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="94dp"
+        android:layout_marginBottom="482dp"
+        android:background="#FFC107"
+        android:backgroundTint="#FFC107"
+        android:ems="10"
+        android:hint="Enter Time Of Day"
+        android:inputType="text"
+        android:textAlignment="center"
+        android:textColor="#101010"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/ShowSuggestionsButton"
+        android:layout_width="133dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="139dp"
+        android:layout_marginEnd="139dp"
+        android:background="#0C27EB"
+        android:text="Show Suggestions"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <Button
+        android:id="@+id/ResetPageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="153dp"
+        android:layout_marginTop="317dp"
+        android:layout_marginEnd="154dp"
+        android:layout_marginBottom="45dp"
+        android:background="#0C27EB"
+        android:text="Reset Page"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ShowSuggestionsButton" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="182dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="114dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="115dp"
+        android:lineSpacingExtra="10sp"
+        android:text="Options for times of Day:"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TimeOfDayText" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="127dp"
+        android:layout_height="118dp"
+        android:layout_marginStart="142dp"
+        android:layout_marginEnd="142dp"
+        android:text="Morning, Mid-Morning, Afternoon, Mid-Afternoon, Dinner,              After-Dinner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
